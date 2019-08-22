@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check_Radio() {
+
+			 name=document.r_check.RADIO1.value;
+               if(name==""){
+                   document.getElementById("Radio").innerHTML="please choose your gender";
+                   document.getElementById("Radio").style.color="red";
+
+                   
+                   return false;
+               }
+               else{
+                   return true;
+               }
+			
+		}
+
+
+	</script>
+	<style type="text/css">
+		.bclr{
+			background-color: aquamarine;
+			height: 200px;
+            width: 350px;
+		}
+	</style>
+</head>
+<body>
+	<form class="bclr" name="r_check" action="assignment32.1.html" method="POST" onsubmit="return check_Radio();">
+		<h1 align="center"> Radio Button Validation</h1>
+		<table>
+			<tr><td><b>Gender :</b></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male<input type="radio" name="RADIO1" value="Male" id="r_male">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					 Female<input type="radio" name="RADIO1" value="female" id="r_female"></td></tr>
+					<tr>
+						<td></td>
+						<td><p id="Radio"></p></td>
+					</tr>
+
+					<tr><td></td><td align="center"><input type="submit" value="submit"></td></tr>
+		</table>
+		
+	</form>
+
+</body>
+</html>

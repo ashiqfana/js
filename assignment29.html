@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function nextpage(){
+			username=document.getElementById("uname").value;
+			password=document.getElementById("paswrd").value;
+			if(username=="admin" && password=="admin123"){
+				return true;
+
+			}
+			else{
+				alert("username=admin & password=admin123");
+				return false;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form action="another.html" method="POST" onsubmit="return nextpage();">
+		Name:<input type="text" value="" id="uname">
+		password:<input type="password" name="" value="" id="paswrd">
+		<input type="submit" value="Login">
+		
+	</form>
+
+</body>
+</html>

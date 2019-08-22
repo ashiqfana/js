@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		image_tracker='f';
+		function change(){
+			var image=document.getElementById('social');
+			if(image_tracker=='f'){
+				image.src='Chrysanthemum.jpg';
+				image_tracker='t';
+
+			}
+			else{
+				image.src='Desert.jpg';
+				image_tracker='f';
+			}
+		}
+		var timer=setInterval('change()',2000);
+	</script>
+</head>
+<body>
+<img src="Desert.jpg" alt="social logo" height="250px" width="400px" id="social" onclick="clearInterval(timer);">
+</body>
+</html>

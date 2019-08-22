@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check_box(){
+			var A=document.getElementById('G').checked;
+			var B=document.getElementById('P').checked;
+			if (A==false && B==false) {
+				document.getElementById("cbox").innerHTML="please Choose your Qualification";
+				document.getElementById("cbox").style.color="red";
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+<style type="text/css">
+	.bclr{
+		background-color: aquamarine;
+		height: 200px;
+        width: 450px;
+	}
+
+</style>
+</head>
+<body>
+	<form class="bclr" name="cb_check" action="assignment33.1.html" method="POST" onsubmit="return check_box();">
+		<h1 align="center">Ckeck Box Validation</h1>
+		<table>
+			<tr><td><b>Qualifications:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>Graduate<input type="checkbox" name="Qualifications" value="Graduate" id="G">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postgraduate<input type="checkbox" name="Qualifications" value="Postgraduate" id="P"></td>
+
+
+			</tr>
+
+			<tr><td></td>
+				<td><p id="cbox"></p></td>
+			</tr>
+			<tr>
+				<td></td><td align="center"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+		
+	</form>
+
+</body>
+</html>
